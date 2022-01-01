@@ -1,0 +1,28 @@
+<!--DataTable Bootstrap5--->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href=" https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap5.min.css">
+<style>
+
+body {
+	font-family:sans-serif;
+	font-size: 14px;
+}
+
+.btn-group-xs > .btn, .btn-xs {
+  padding: .25rem .4rem;
+  font-size: .875rem;
+  line-height: .5;
+  border-radius: .2rem;
+}
+
+.btn-head-table {
+  padding-bottom: 10px;
+}
+
+.editBtn:hover {
+    color: white;
+}
+
+
+</style>

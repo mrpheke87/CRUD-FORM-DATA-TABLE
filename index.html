@@ -1,0 +1,147 @@
+<!--<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>JURNAL GURU</title>
+  </head>
+  <body>
+    <style>
+      h1{text-align: center;font-size: 22px;font-weight: bold;}
+    </style>
+    <div class="container mt-1" style="background-color: navy;color: #fff;width: 100%;">
+        <h1>JURNAL GURU</h1>
+        <form class="row g-2">
+           <div class="col-md-3">
+            <label for="Nama" class="form-label">Nama Guru</label>
+            <select type="text" class="form-control" id="Nama" name="Nama" required>
+              <option>Nurjannah,S.Pd.I</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="NIP" class="form-label">NIP</label>
+            <select type="text" class="form-control" id="NIP" nama="NIP" required>
+              <option>198208152009042005</option>
+              </select> 
+          </div>
+          <div class="col-md-3">
+            <label for="Subjek" class="form-label">Mata Pelajaran</label>
+            <select type="text" class="form-control" id="Subjek" name="Subjek" required>
+            <option>--Pilih--</option>
+            <option>Bahasa Inggris</option>
+            <option>Sastra Inggris</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="Semester" class="form-label">Semester</label>
+            <select type="text" class="form-control" id="Semester" name="Semester" placeholder="Semester">
+            <option>--Pilih--</option>
+            <option>Ganjil</option>
+            <option>Genap</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="Tahun_pelajaran" class="form-label">Tahun Pelajaran</label>
+            <select type="text" class="form-control" id="Tahun_pelajaran" name="Tahun_pelajaran" required>
+              <option>--Pilih--</option>
+              <option>2021-2022</option>
+              <option>2022-2023</option>
+              <option>2023-2024</option>
+              <option>2024-2025</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="Hari" class="form-label">Hari</label>
+            <select type="text" class="form-control" id="Hari" name="Hari" required>
+            <option>--Pilih--</option>
+              <option>Senin</option>
+              <option>Selasa</option>
+              <option>Rabu</option>
+              <option>Kamis</option>
+              <option>Jumat</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="Tanggal" class="form-label">Tanggal</label>
+            <input type="date" class="form-control" id="Tanggal" name="Tanggal" required>
+          </div>
+          <div class="col-md-3">
+            <label for="Kelas" class="form-label">Kelas</label>
+            <select type="text" class="form-control" id="Kelas"name="Kelas" placeholder="Kelas">
+              <option>--Pilih--</option>
+              <option>X IPA 1</option>
+              <option>X IPA 2</option>
+              <option>X IPS 1</option>
+              <option>X IPS 2</option>
+              <option>X IPS 3</option>
+              <option>XI IPA 1</option>
+              <option>XI IPA 2</option>
+              <option>XI IPS 1</option>
+              <option>XI IPS 2</option>
+              <option>XI IPS 3</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="Jam" class="form-label">Jam Ke</label>
+            <input type="text" class="form-control" id="Jam" name="Jam" placeholder="Jam ke" required>
+          </div>
+           <div class="col-md-3">
+            <label for="Pertemuan" class="form-label">Pertemuan</label>
+            <input type="number" class="form-control" id="Pertemuan" name="Pertemuan" placeholder="Pertemuan" required>
+          </div>
+          <div class="col-md-6">
+            <label for="Materi" class="form-label">Materi Pokok</label>
+            <input type="text" class="form-control" id="Materi" name="Materi" placeholder="Materi pokok" required>
+          </div>
+         <div class="col-md-12">
+            <label for="Kegiatan_Pembelajaran" class="form-label">Kegiatan Pembelajaran</label>
+            <input type="text" class="form-control" id="Kegiatan_Pembelajaran" name="Kegiatan_Pembelajaran" placeholder="Kegiatan pembelajaran" required>
+          </div>
+          <div class="col-md-12">
+            <label for="Penilaian" class="form-label">Penilaian Pembelajaran</label>
+            <input type="text" class="form-control" id="Penilaian" name="Penilaian" placeholder="Penilaian pembelajaran" required>
+          </div>
+          <div class="col-md-4">
+            <label for="Sakit" class="form-label">Siswa Sakit</label>
+            <input type="text" class="form-control" id="Sakit" name="Sakit" placeholder="Siswa sakit">
+          </div>
+          <div class="col-md-4">
+            <label for="Ijin" class="form-label">Siswa Ijin</label>
+            <input type="text" class="form-control" id="Ijin" name="Ijin" placeholder="Siswa ijin">
+          </div>
+          <div class="col-md-4">
+            <label for="Alfa" class="form-label">Siswa Alfa</label>
+            <input type="text" class="form-control" id="Alfa" name="Alfa" placeholder="Siswa alfa">
+          </div>
+          <div class="col-md-12">
+            <label for="Catatan" class="form-label">Catatan</label>
+            <input type="text" class="form-control" id="Catatan" name="Catatan" placeholder="Catatan selama kegiatan pembelajaran" required>
+          </div>
+
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-success"style="width: 100%;font-weight: bold;">SUBMIT</button>
+          </div>
+          <div>
+
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyhCYvcJs0X0KXnQ8d5M-BMaYPsXvTDf6CRHLA0NmGZpG6HqU0n8xXzoZ-9UjIYn0Z8/exec'
+        const form = document.forms['google-sheet']
+        
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => $("#form_alerts").html("<div class='alert alert-success'>Data berhasil dikirim.</div>"))
+            .catch(error => $("#form_alerts").html("<div class='alert alert-danger'>Data gagal terkirim!.</div>"))
+            form.reset();
+        })
+    </script>
+  </body>
+</html>
+-->

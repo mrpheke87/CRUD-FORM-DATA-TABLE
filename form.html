@@ -1,0 +1,57 @@
+<!-- ## The html code of the form goes here -->
+<!-- ## This is included in the Index.html page using "include('Form')" function -->
+
+<form id="myForm" class="p-2 border border-light rounded bg-light" onsubmit="handleFormSubmit(this)"> 
+  <!-- Call JavaScript function "handleFormSubmit" -->
+   
+    <div id="message"></div>
+      <input type="text" id="RecId" name="RecId" value="" style="display: none">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="name" >Nama Siswa</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Nama siswa" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="nisn" >NISN</label>
+        <input type="number" class="form-control" id="nisn" name="nisn" placeholder="NISN" required>
+      </div>
+        <div class="form-group col-md-6" >
+        <label for="kelas">Kelas</label>
+        <select type="text" class="form-control" id="kelas" name="kelas"  required>
+        <option>--Pilih--</option>
+        <option>X IPA 1</option>
+        <option>X IPA 2</option>
+        <option>X IPA 3</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="gender">Gender</label>
+        <select type="gender" class="form-control" id="gender" name="gender"  required>
+        <option>--Pilih--</option>
+        <option>Laki-laki</option>
+        <option>Perempuan</option>
+        </select>
+      </div>
+      
+       <div class="form-row">
+      <div class="form-group col-md-12">
+          <label for="alamat">Alamat</label>
+          <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat" required>
+      </div>
+
+      <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="kontak">Kontak</label>
+         <input type="number" class="form-control" id="kontak" name="kontak" placeholder="Kontak" required>
+        </div>
+      </div>
+    </div>
+
+	  <button id="btnSubmit" type="submit" class="btn btn-primary" >Submit</button>
+    <input class="btn btn-secondary" type="reset" value="Reset">
+    
+</form>
+

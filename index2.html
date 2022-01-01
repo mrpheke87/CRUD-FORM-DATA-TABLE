@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <base target="_top">
+        <!-- Popup Modal -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- Data Table -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        
+        <!-- See JavaScript.html file -->
+        <?!= include('javaScript'); ?>
+
+        <!-- See stylecss.html file -->
+        <?!= include('stylecss'); ?> 
+
+    </head>
+    <body>
+        <div class="container">
+
+        <!-- The Modal Form -->
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h2>Data Siswa</h2>    
+                    <button type="button" id="btn-close" class="close" data-dismiss="modal" onclick="clearForm();">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                  <!-- See Form.html file -->
+                  <?!= include('form'); ?> 
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DataTable  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <div class="btn-head-table"><p></p></div>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col-md">
+
+                  <!-- See DataTable.html File -->
+                  <?!= include('DataTable'); ?> 
+
+                </div>
+            </div>     
+        </div>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
+

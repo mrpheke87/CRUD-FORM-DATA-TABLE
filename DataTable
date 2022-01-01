@@ -1,0 +1,36 @@
+  <div class="table-wrapper"style="background-color:navy;height:50px">
+    <div class="row">
+      <div class="col-xs-6" style="margin-left:5px;color:#fff;margin-top:10px">
+              <h4>SDN <b>001 Babulu</b></h4>
+            </div>
+          <div class="col">
+            <!-- Create a button for adding members. ------------------ -->
+            <div class='btn-head-table'>
+              <button type='button' class='btn btn-success'data-toggle='modal' data-target='#myModal'style="float:right;margin-top:-41px; margin-right:5px"> + Tambah Data</button>
+            </div>
+          </div>
+    </div>
+  </div><br>
+          <div class="col-auto"style="float:right">
+                <!-- ## SEARCH FORM ---------------------------------- -->
+                <form id="search-form" class="form-inline" onclick="loading();" onsubmit="handleFormSubmitSearch(this);">
+                  <div class="form-group mb-2">
+                    <label for="searchtext"><i class="fa fa-search" aria-hidden="true"></i></label>
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control" id="searchtext" name="searchtext" placeholder="Search text">
+                  </div>
+                  <button type="submit" class="btn btn-primary mb-2">Search</button>
+                </form>
+                <!-- ## SEARCH FORM ~ END --------------------------- -->
+          </div>    
+    </div>
+
+<!-- The Data Table is inserted here by JavaScript ------------------ -->
+     <div id="dataTable" class="table-responsive"></div>
+     
+
+<!-- Create a button to load all data ---------------------------->
+<div>
+  <button type="button" class="btn btn-primary" onclick="getAllData()">View All</button>
+</div>
